@@ -1,0 +1,42 @@
+version: "1.0"
+
+profile:
+  name: qodana.starter
+
+projectJDK: "21"
+linter: jetbrains/qodana-jvm-community:2025.2
+
+include:
+  - name: NullableProblemsInspection
+  - name: UnusedDeclarationInspection
+  - name: UnusedAssignmentInspection
+  - name: UnusedParameterInspection
+  - name: SecurityInspection
+  - name: VulnerableLibrariesInspection
+  - name: SpringJavaInspection
+  - name: MethodNamingConventionInspection
+  - name: FieldNamingConventionInspection
+  - name: LocalVariableNamingConventionInspection
+  - name: TooGenericExceptionThrownInspection
+  - name: InterruptedExceptionInControlFlowInspection
+  - name: UtilityClassWithoutPrivateConstructorInspection
+  - name: UnnecessaryBracesInspection
+  - name: SimplifyBooleanExpressionInspection
+  - name: MergeIfInspection
+  - name: UseOfSystemOutOrSystemErrInspection
+  - name: EqualsHashCodeInspection
+  - name: ModifierOrderInspection
+  - name: IllegalUnicodeEscapeInspection
+  - name: ConstantValueInspection
+  - name: FinalPrivateFieldInspection
+
+exclude:
+  - name: CodeStyleInspection
+  - name: RedundantModifierInspection
+  - name: UnnecessarySemicolonInspection
+  - name: SpellCheckingInspection
+
+failureConditions:
+  severityThresholds:
+    any: 10
+    critical: 4
