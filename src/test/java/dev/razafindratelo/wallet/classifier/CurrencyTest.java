@@ -1,9 +1,9 @@
-package dev.razafindratelo.wallet;
+package dev.razafindratelo.wallet.classifier;
 
-import static dev.razafindratelo.wallet.Currency.EURO;
-import static dev.razafindratelo.wallet.Currency.MGA;
-import static dev.razafindratelo.wallet.Currency.USD;
-import static dev.razafindratelo.wallet.Currency.convert;
+import static dev.razafindratelo.wallet.classifier.Currency.EURO;
+import static dev.razafindratelo.wallet.classifier.Currency.MGA;
+import static dev.razafindratelo.wallet.classifier.Currency.USD;
+import static dev.razafindratelo.wallet.classifier.Currency.convert;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;

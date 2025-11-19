@@ -1,7 +1,7 @@
 package dev.razafindratelo.wallet;
 
-import static dev.razafindratelo.wallet.Currency.EURO;
-import static dev.razafindratelo.wallet.Currency.MGA;
+import static dev.razafindratelo.wallet.classifier.Currency.EURO;
+import static dev.razafindratelo.wallet.classifier.Currency.MGA;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 

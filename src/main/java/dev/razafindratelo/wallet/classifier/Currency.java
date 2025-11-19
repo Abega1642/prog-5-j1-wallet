@@ -1,4 +1,4 @@
-package dev.razafindratelo.wallet;
+package dev.razafindratelo.wallet.classifier;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

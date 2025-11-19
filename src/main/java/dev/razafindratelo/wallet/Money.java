@@ -1,6 +1,8 @@
 package dev.razafindratelo.wallet;
 
-import static dev.razafindratelo.wallet.Currency.convert;
+import static dev.razafindratelo.wallet.classifier.Currency.convert;
+
+import dev.razafindratelo.wallet.classifier.Currency;
 
 public record Money(double amount, Currency currency) {
 
