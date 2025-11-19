@@ -1,3 +1,3 @@
 package dev.razafindratelo.wallet;
 
-public record Card() {}
+public record Card(String cardName, Money money) {}
