@@ -21,6 +21,7 @@ class WalletTest {
 
   @Test
   void should_add_money_to_wallet() {
+    TEST_WALLET.setMoney(new Money(50_000d, MGA));
     var toBeAdded = new Money(50_000d, MGA);
     var totalMoney = TEST_WALLET.addMoney(toBeAdded);
 
@@ -30,6 +31,7 @@ class WalletTest {
 
   @Test
   void should_withdraw_money_to_wallet() {
+    TEST_WALLET.setMoney(new Money(50_000d, MGA));
     var toBeSubtracted = new Money(50_000d, MGA);
     var totalMoney = TEST_WALLET.addMoney(toBeSubtracted);
 
@@ -39,12 +41,14 @@ class WalletTest {
 
   @Test
   void should_throw_exception_on_subtract_money() {
+    TEST_WALLET.setMoney(new Money(50_000d, MGA));
     var toBeAdded = new Money(50_001d, MGA);
     assertThrows(IllegalArgumentException.class, () -> TEST_WALLET.withdrawMoney(toBeAdded));
   }
 
   @Test
   void should_throw_exception_on_negative_amount_with_addMoney_method() {
+    TEST_WALLET.setMoney(new Money(50_000d, MGA));
     var toBeAdded = new Money(-50_000d, MGA);
     assertThrows(IllegalArgumentException.class, () -> TEST_WALLET.addMoney(toBeAdded));
   }
