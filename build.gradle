@@ -5,7 +5,7 @@ plugins {
     id "com.github.spotbugs" version "6.2.5"
 }
 
-group = 'dev.razafindratelo'
+group = 'dev.razafindratelo.wallet'
 version = '1.0-SNAPSHOT'
 
 repositories {
